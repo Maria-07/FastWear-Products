@@ -25,6 +25,7 @@ font-family: 'Poppins',sans-serif;
     width: 1300px;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
 }
 
 .section-size {
@@ -153,6 +154,7 @@ header nav{
     align-items: center;
     justify-items: center;
     column-gap: 5%;
+    row-gap: 5%;
 }
 
 .collection{
@@ -161,6 +163,7 @@ header nav{
     overflow: hidden;
     transition: 0.3s;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.459);
+    
 }
 
 .collection:hover{
@@ -204,4 +207,21 @@ header nav{
     font-size: 1em;
     word-spacing: 2px;
     width: 60%;
+}
+
+.more a{
+    display: inline-block;
+   margin-top: 4%;
+   text-decoration: none;
+   font-size: 1.2em;
+   letter-spacing: 1px;
+   color: #991b49;
+   position: absolute;
+   right: 10px;
+   transition: 0.4s;
+   padding: 5px;
+}
+
+.more a:hover{
+    color: #3A3A3A;
 }
