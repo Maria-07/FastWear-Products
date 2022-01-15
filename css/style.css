@@ -92,7 +92,7 @@ header nav {
     text-decoration: none;
     color: var(--font);
     font-size: 1.1em;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 20px;
     margin: 0 10px;
     padding: 5px 10px;
@@ -142,6 +142,7 @@ header nav {
     font-weight: 600;
     transition: 0.4s;
     letter-spacing: 1px;
+    border-radius: 5px;
 }
 
 .btn a:hover {
@@ -171,7 +172,7 @@ header nav {
     text-transform: uppercase;
     text-align: center;
     word-spacing: 2px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 .collections {
@@ -189,6 +190,7 @@ header nav {
     overflow: hidden;
     transition: 0.3s;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
 
 }
 
@@ -247,6 +249,7 @@ header nav {
     right: 10px;
     transition: 0.4s;
     padding: 5px;
+    font-weight: 600;
 }
 
 .more a:hover {
@@ -303,6 +306,30 @@ header nav {
     text-transform: capitalize;
 }
 
+/* -------------------------coverage------------------------- */
+
+
+.coverage-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.coverage-part .coverage-info{
+    padding: 2% 5%;
+}
+
+.coverage-info h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.coverage-info p{
+    font-size: 1em;
+    margin-bottom: 1.1em;
+}
+
 
 /* -------------------------footer------------------------- */
 
@@ -354,6 +381,10 @@ footer p {
 
     .menu-list {
         margin-top: 5%;
+    }
+
+    .menu-list li a{
+        margin: 0 5px;
     }
 
     .banner {
@@ -416,7 +447,25 @@ footer p {
         padding: 20px 0;
     }
 
+    .coverage-part{
+        flex-direction: column;
+    }
+
+    .coverage-photo img{
+        margin-bottom: 1em;
+    }
+
+    .coverage-info {
+        text-align: center;
+    }
+
+    .coverage-info p{
+        font-size: 1em;
+    }
+
 }
+
+/* for tab user  */
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     .container {
@@ -490,5 +539,21 @@ footer p {
     .lookbooks a {
         padding: 10px 40px;
         right: 0;
+    }
+
+    .coverage-part {
+        flex-direction: column;
+    }
+
+    .coverage-photo img {
+        margin-bottom: 1em;
+    }
+
+    .coverage-info{
+        text-align: center;
+    }
+
+    .coverage-info p {
+        font-size: 1.5em;
     }
 }
