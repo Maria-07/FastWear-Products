@@ -32,44 +32,46 @@ font-family: 'Poppins',sans-serif;
     padding: 8em 0;
 }
 
-body{
+body {
     color: var(--font);
     font-family: 'Lato',
-    sans-serif;
+        sans-serif;
 }
+
+
 
 /* ------------------------HEADER PART---------------------------- */
 
-header{
+header {
     display: flex;
     flex-direction: column;
 }
 
-.head{
+.head {
     margin: 60px 0 0;
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-title{
+.header-title {
     font-size: 1.5em;
-    font-family: 'Oxygen',sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
-.header-title span{
+.header-title span {
     color: #991b49;
 }
 
-.menu-list ul li{
+.menu-list ul li {
     display: inline-block;
     list-style: none;
 }
 
-.menu-list li a{
+.menu-list li a {
     text-decoration: none;
     color: var(--font);
     font-size: 1.1em;
@@ -80,31 +82,31 @@ header nav{
     transition: 0.4s;
 }
 
-.menu-list li a:hover{
+.menu-list li a:hover {
     color: #991b49;
     border-bottom: 1px solid #991b49;
 }
 
-.banner{
+.banner {
     display: flex;
     justify-items: center;
     align-items: center;
     margin-top: 10%;
 }
 
-.head-info{
+.head-info {
     width: 60%;
 }
 
-.head-info h1{
+.head-info h1 {
     font-size: 3em;
-    font-family: 'Oxygen',sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: 600;
     line-height: 70px;
     margin-bottom: 20px;
 }
 
-.head-info p{
+.head-info p {
     font-size: 1.1em;
     line-height: 24px;
     font-weight: 600;
@@ -112,7 +114,7 @@ header nav{
     margin-bottom: 30px;
 }
 
-.btn a{
+.btn a {
     text-transform: capitalize;
     display: inline-block;
     text-decoration: none;
@@ -125,30 +127,32 @@ header nav{
     letter-spacing: 1px;
 }
 
-.btn a:hover{
+.btn a:hover {
     color: #fff;
     background-color: #991b49;
 }
-.banner img{
+
+.banner img {
     width: 100%;
 }
 
 /* ------------------------Collection Section---------------------------- */
 
-#collection{
+#collection {
     background-color: #ede9e7;
 }
 
-.section-title{
+.section-title {
     font-size: 2em;
     font-weight: 600;
     line-height: 30px;
     text-transform: uppercase;
     text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 60px;
 }
 
-.collections{
-    margin-top: 10%;
+.collections {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -157,38 +161,38 @@ header nav{
     row-gap: 5%;
 }
 
-.collection{
+.collection {
     background-color: #fff;
     padding: 15px;
     overflow: hidden;
     transition: 0.3s;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.459);
-    
+
 }
 
-.collection:hover{
+.collection:hover {
     transform: translateY(-10px);
     box-shadow: 8px 24px 16px rgba(0, 0, 0, 0.459);
 }
 
-.collection .collection-img img{
+.collection .collection-img img {
     border-radius: 10px;
     width: 100%;
 }
 
-.collection-info{
+.collection-info {
     margin: 10px 10px 20px;
     width: 95%;
 }
 
-.collection-info h2{
+.collection-info h2 {
     margin-top: 1em;
     font-size: 1.5em;
     margin-bottom: 5px;
     padding-top: 10px;
 }
 
-.collection-info .price{
+.collection-info .price {
     font-size: 24px;
     margin-bottom: 15px;
 }
@@ -199,29 +203,224 @@ header nav{
     margin-bottom: 10px;
 }
 
-.poin{
+.poin {
     margin-left: 10px;
 }
 
-.collection-info p{
+.collection-info p {
     font-size: 1em;
     word-spacing: 2px;
     width: 60%;
 }
 
-.more a{
+.more a {
+    text-transform: uppercase;
     display: inline-block;
-   margin-top: 4%;
-   text-decoration: none;
-   font-size: 1.2em;
-   letter-spacing: 1px;
-   color: #991b49;
-   position: absolute;
-   right: 10px;
-   transition: 0.4s;
-   padding: 5px;
+    margin-top: 4%;
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: #991b49;
+    position: absolute;
+    right: 10px;
+    transition: 0.4s;
+    padding: 5px;
 }
 
-.more a:hover{
+.more a:hover {
     color: #3A3A3A;
+}
+
+/* ------------------------logo Section---------------------------- */
+
+.logo .logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* ------------------------look book---------------------------- */
+
+
+.lookbooks{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.lookbook{
+    position: relative;
+    overflow: hidden;
+}
+
+.lookbook img{
+    width: 100%;
+    transition: 0.4s;
+}
+
+.lookbook:hover img{
+    transform: scale(1.2);
+}
+
+.lookbook a{
+    position: absolute;
+    left: 18%;
+    bottom: 25px;
+    text-decoration: none;
+    padding: 20px 80px;
+    font-size: 1.2em;
+    background: #991b49;
+    color: #ede9e7;
+    text-transform: capitalize;
+}
+
+
+
+
+/* ----------------------------------------------------------------
+--------------------- media quaries ---------------------------
+---------------------------------------------------------------- */
+
+/* for mobile user  */
+
+@media only screen and (max-width: 688px){
+    .container{
+        width: 100%;
+    }
+
+    header nav{
+        flex-direction: column;
+    }
+
+    .menu-list{
+        margin-top: 5%;
+    }
+
+    .banner{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .banner img{
+        order: 1;
+    }
+
+    .banner .head-info{
+        order: 2;
+        text-align: center;
+    }
+
+    .head-info p{
+        width: 100%;
+    }
+
+    .section-title{
+       margin-bottom: 10%;
+    
+    }
+
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        padding-bottom: 30%;
+        padding-top: 20%;
+    }
+
+    .more a{
+        left: 40%;
+        bottom: 0;
+    }
+
+
+    .lookbooks{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .lookbooks a{
+        right: 0;
+        padding: 10px 20px;
+    }
+
+    .logos{
+        flex-direction: column;
+    }
+
+    .logos img{
+        padding: 20px 0;
+    }
+
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    .menu-list {
+        margin-top: 5%;
+    }
+
+    .banner {
+        flex-direction: column;
+        padding-bottom: 2em;
+    }
+
+    .banner img {
+        order: 1;
+    }
+
+    .banner .head-info {
+        order: 2;
+        text-align: center;
+    }
+
+    .head-info p {
+        width: 100%;
+    }
+
+    .section-title{
+        margin-bottom: 15%;
+    }
+
+    #collection{
+        flex-direction: column;
+    }
+     .collections{
+         grid-template-columns: repeat(2, 1fr);
+         justify-items: center;
+         margin-right: 3%;
+     }
+
+     .more a{
+         margin-right: 20%;
+         bottom: 6%;
+     }
+
+     .logos{
+         flex-direction: column;
+     }
+
+     .logos img {
+         padding: 10px 0;
+     }
+
+      .lookbooks {
+          grid-template-columns: repeat(2, 1fr);
+          justify-items: center;
+      }
+
+      .lookbooks a{
+          padding: 10px 40px;
+          right: 0;
+      }
 }
