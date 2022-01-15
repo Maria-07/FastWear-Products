@@ -229,15 +229,17 @@ header nav {
 
 .more a:hover {
     color: #3A3A3A;
+    letter-spacing: 3px;
 }
 
 /* ------------------------logo Section---------------------------- */
 
 .logo .logos {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    margin: 5% 0;
 }
 
 /* ------------------------look book---------------------------- */
@@ -279,6 +281,37 @@ header nav {
     text-transform: capitalize;
 }
 
+
+/* -------------------------footer------------------------- */
+
+footer{
+    background-color: #272727;
+    color: #ede9e7;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.social{
+    margin-top: 20px;
+}
+
+.social ul li{
+    display: inline-block;
+}
+
+.social ul li a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--font);
+    font-size: 2em;
+    background-color: #ede9e7;
+    padding: 10px;
+    border-radius: 50%;
+}
 
 
 
